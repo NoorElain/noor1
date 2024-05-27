@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        nav{
+           background-color: black;
+           color: #fff;
+           padding: 20px;
+           width: 100vw;
+       }
+       nav ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           text-align: center;
+       }
+       nav ul li{
+           display: inline-block;
+       }
+       nav ul li button{
+           background-color: transparent;
+           color: #fff;
+           text-decoration: none;
+           padding: 10px;
+           border: none;
+           outline: none;
+       }
+       nav ul li button:focus{
+           background-color: #fff;
+           color: #000000;
+           border-radius: 20px;
+       }
+       nav ul li button:hover{
+           background-color: #fff;
+           color: #000000;
+           border-radius: 20px;
+       }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .left, .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left {
+            height: 50%;
+        }
+        .right {
+            background: url(car5.jpg);
+            height: 350px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 30px;
+            height: 30px;
+        }
+        .btn{
+            background-color: transparent;
+           color: #000000;
+           text-decoration: none;
+           padding: 10px;
+           border: none;
+           outline: none;
+        }
+        .btn:focus{
+           background-color: #000000;
+           color: #fff;
+           border-radius: 20px;
+       }
+       .btn:hover{
+           background-color: #000000;
+           color: #fff;
+           border-radius: 20px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <nav>
+                <ul>
+                    <li><button>Button1</button></li>
+                    <li><button>Button2</button></li>
+                    <li><button>Button3</button></li>
+                    <li><button>Button4</button></li>
+                    <li><button>Button5</button></li>
+                    <li><button>Button6</button></li>
+                </ul>  
+            </nav>
+        </div>
+        <div class="">
+            <div class="right">
+                <p style="font-size: 40px;">This is the top section of the page.</p>
+            </div>
+            <br><br><br><br>
+            <div class="left">
+                <table>
+                    <tr>
+                        <td><button class="btn" onclick="next()">next</button></td>
+                        <td class="window"><img src="car4.jpg"><pre>                Car1 ^_^!</pre></td>
+                        <td class="window"><img src="car4.jpg"><pre>                Car2 ^_^!</pre></td>
+                        <td><button class="btn" onclick="back()">back</button></td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function next(){
+        window.location.href = "index.html";
+    }
+    function back(){
+        window.location.href = "idex2.html";
+    }
+    alert("poooom!");
+</script>
